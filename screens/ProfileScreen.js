@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, SafeAreaView, StyleSheet} from 'react-native';
+import {View, SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import {
   Avatar,
   Title,
@@ -9,6 +9,7 @@ import {
 } from 'react-native-paper';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import Share from 'react-native-share';
 
@@ -33,12 +34,12 @@ const ProfileScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-
+      <ScrollView>
       <View style={styles.userInfoSection}>
         <View style={{flexDirection: 'row', marginTop: 15}}>
           <Avatar.Image 
             source={{
-              uri: 'https://api.adorable.io/avatars/80/abott@adorable.png',
+              uri: 'https://png.pngtree.com/png-clipart/20190630/original/pngtree-white-dreamy-smoke-element-png-image_4155965.jpg',
             }}
             size={80}
           />
@@ -108,11 +109,12 @@ const ProfileScreen = () => {
         </TouchableRipple>
         <TouchableRipple onPress={() => {}}>
           <View style={styles.menuItem}>
-            <Icon name="settings-outline" color="#FF6347" size={25}/>
+            <Ionicons name="settings-outline" color="#FF6347" size={25}/>
             <Text style={styles.menuItemText}>Settings</Text>
           </View>
         </TouchableRipple>
       </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };

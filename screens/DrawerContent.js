@@ -34,7 +34,7 @@ export function DrawerContent(props) {
                         <View style={{flexDirection:'row',marginTop: 15}}>
                             <Avatar.Image 
                                 source={{
-                                    uri: 'https://api.adorable.io/avatars/50/abott@adorable.png'
+                                    uri: 'https://png.pngtree.com/png-clipart/20190630/original/pngtree-white-dreamy-smoke-element-png-image_4155965.jpg'
                                 }}
                                 size={50}
                             />

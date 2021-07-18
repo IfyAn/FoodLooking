@@ -21,7 +21,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 
 const EditProfileScreen = () => {
 
-  const [image, setImage] = useState('https://api.adorable.io/avatars/80/abott@adorable.png');
+  const [image, setImage] = useState('https://png.pngtree.com/png-clipart/20190630/original/pngtree-white-dreamy-smoke-element-png-image_4155965.jpg');
   const {colors} = useTheme();
 
   const takePhotoFromCamera = () => {
@@ -33,7 +33,7 @@ const EditProfileScreen = () => {
     }).then(image => {
       console.log(image);
       setImage(image.path);
-      this.bs.current.snapTo(1);
+      sheetRef.current.snapTo(1)
     });
   }
 
@@ -46,7 +46,7 @@ const EditProfileScreen = () => {
     }).then(image => {
       console.log(image);
       setImage(image.path);
-      this.bs.current.snapTo(1);
+      sheetRef.current.snapTo(1)
     });
   }
 
@@ -64,7 +64,7 @@ const EditProfileScreen = () => {
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.panelButton}
-        onPress={() => this.bs.current.snapTo(1)}>
+        onPress={()=>sheetRef.current.snapTo(1)}>
         <Text style={styles.panelButtonTitle}>Cancel</Text>
       </TouchableOpacity>
     </View>
@@ -78,25 +78,27 @@ const EditProfileScreen = () => {
     </View>
   );
 
-  bs = React.createRef();
-  fall = new Animated.Value(1);
+  const sheetRef = React.useRef(null);
+  const fall = new Animated.Value(1);
+
 
   return (
     <View style={styles.container}>
       <BottomSheet
-        ref={this.bs}
+        ref={sheetRef}
         snapPoints={[330, 0]}
-        renderContent={this.renderInner}
-        renderHeader={this.renderHeader}
+        renderContent={renderInner}
+        renderHeader={renderHeader}
         initialSnap={1}
-        callbackNode={this.fall}
+        initialSnap={1}
+        callbackNode={fall}
         enabledGestureInteraction={true}
       />
       <Animated.View style={{margin: 20,
-        opacity: Animated.add(0.1, Animated.multiply(this.fall, 1.0)),
+        opacity: Animated.add(0.1, Animated.multiply(fall, 1.0)),
     }}>
         <View style={{alignItems: 'center'}}>
-          <TouchableOpacity onPress={() => this.bs.current.snapTo(0)}>
+          <TouchableOpacity onPress={() => sheetRef.current.snapTo(0)}>
             <View
               style={{
                 height: 100,

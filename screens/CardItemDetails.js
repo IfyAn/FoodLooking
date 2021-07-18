@@ -8,9 +8,7 @@ import {
   StatusBar,
   Platform,
 } from 'react-native';
-import HeaderImageScrollView, {
-  TriggeringView,
-} from 'react-native-image-header-scroll-view';
+import { ImageHeaderScrollView, TriggeringView } from 'react-native-image-header-scroll-view';;
 
 import * as Animatable from 'react-native-animatable';
 import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
@@ -26,7 +24,7 @@ const CardItemDetails = ({route}) => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" />
-      <HeaderImageScrollView
+      <ImageHeaderScrollView
         maxHeight={MAX_HEIGHT}
         minHeight={MIN_HEIGHT}
         maxOverlayOpacity={0.6}
@@ -88,7 +86,7 @@ const CardItemDetails = ({route}) => {
             />
           </MapView>
         </View>
-      </HeaderImageScrollView>
+      </ImageHeaderScrollView>
     </View>
   );
 };

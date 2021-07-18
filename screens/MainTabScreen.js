@@ -125,7 +125,7 @@ const HomeStackScreen = ({navigation}) => {
                 <Avatar.Image
                   source={{
                     uri:
-                      'https://api.adorable.io/avatars/80/abott@adorable.png',
+                      'https://png.pngtree.com/png-clipart/20190630/original/pngtree-white-dreamy-smoke-element-png-image_4155965.jpg',
                   }}
                   size={30}
                 />
@@ -146,7 +146,7 @@ const HomeStackScreen = ({navigation}) => {
         name="CardItemDetails"
         component={CardItemDetails}
         options={({route}) => ({
-          // title: route.params.title,
+        // title: route.params.title,
           headerBackTitleVisible: false,
           headerTitle: false,
           headerTransparent: true,
