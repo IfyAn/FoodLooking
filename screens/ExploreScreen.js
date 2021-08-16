@@ -55,10 +55,14 @@ const ExploreScreen = () => {
       },
   ],
     region: {
-      latitude: 22.62938671242907,
-      longitude: 88.4354486029795,
-      latitudeDelta: 0.04864195044303443,
-      longitudeDelta: 0.040142817690068,
+      latitude: 6.601838,
+      longitude: 3.351486,
+      // latitude: 22.62938671242907,
+      // longitude: 88.4354486029795,
+      //latitudeDelta: 0.00864195044303443,
+      //longitudeDelta: 0.000142817690068,
+       latitudeDelta: 0.04864195044303443,
+       longitudeDelta: 0.040142817690068,
     },
   };
 

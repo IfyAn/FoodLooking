@@ -15,7 +15,7 @@ import Share from 'react-native-share';
 
 //import files from '../assets/filesBase64';
 
-const ProfileScreen = () => {
+const ProfileScreen = ({navigation}) => {
 
   const myCustomShare = async() => {
     const shareOptions = {
@@ -56,15 +56,15 @@ const ProfileScreen = () => {
       <View style={styles.userInfoSection}>
         <View style={styles.row}>
           <Icon name="map-marker-radius" color="#777777" size={20}/>
-          <Text style={{color:"#777777", marginLeft: 20}}>Kolkata, India</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>Lagos, Nigeria</Text>
         </View>
         <View style={styles.row}>
           <Icon name="phone" color="#777777" size={20}/>
-          <Text style={{color:"#777777", marginLeft: 20}}>+91-900000009</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>+2349069094011</Text>
         </View>
         <View style={styles.row}>
           <Icon name="email" color="#777777" size={20}/>
-          <Text style={{color:"#777777", marginLeft: 20}}>john_doe@email.com</Text>
+          <Text style={{color:"#777777", marginLeft: 20}}>chukwuanyan@mail.com</Text>
         </View>
       </View>
 
@@ -73,7 +73,7 @@ const ProfileScreen = () => {
             borderRightColor: '#dddddd',
             borderRightWidth: 1
           }]}>
-            <Title>₹140.50</Title>
+            <Title>N140,000.50</Title>
             <Caption>Wallet</Caption>
           </View>
           <View style={styles.infoBox}>
@@ -89,7 +89,7 @@ const ProfileScreen = () => {
             <Text style={styles.menuItemText}>Your Favorites</Text>
           </View>
         </TouchableRipple>
-        <TouchableRipple onPress={() => {}}>
+        <TouchableRipple onPress={() => navigation.navigate('Payment')}>
           <View style={styles.menuItem}>
             <Icon name="credit-card" color="#FF6347" size={25}/>
             <Text style={styles.menuItemText}>Payment</Text>

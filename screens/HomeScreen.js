@@ -31,21 +31,21 @@ const HomeScreen = ({navigation}) => {
           activeDotColor="#FF6347">
           <View style={styles.slide}>
             <Image
-              source={require('../assets/banners/food-banner1.jpg')}
+              source={require('../assets/banners/food-banner11.jpg')}
               resizeMode="cover"
               style={styles.sliderImage}
             />
           </View>
           <View style={styles.slide}>
             <Image
-              source={require('../assets/banners/food-banner2.jpg')}
+              source={require('../assets/banners/food-banner22.jpg')}
               resizeMode="cover"
               style={styles.sliderImage}
             />
           </View>
           <View style={styles.slide}>
             <Image
-              source={require('../assets/banners/food-banner3.jpg')}
+              source={require('../assets/banners/food-banner33.jpg')}
               resizeMode="cover"
               style={styles.sliderImage}
             />
@@ -78,7 +78,7 @@ const HomeScreen = ({navigation}) => {
           </View>
           <Text style={styles.categoryBtnTxt}>Fastfood Center</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.categoryBtn} onPress={() => navigation.navigate('CardListScreen', {title: 'Fastfood Center'})}>
           <View style={styles.categoryIcon}>
             <MaterialCommunityIcons name="food" size={35} color="#FF6347" />
           </View>
@@ -86,19 +86,19 @@ const HomeScreen = ({navigation}) => {
         </TouchableOpacity>
       </View>
       <View style={[styles.categoryContainer, {marginTop: 10}]}>
-        <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.categoryBtn} onPress={() => navigation.navigate('CardListScreen', {title: 'Fastfood Center'})}>
           <View style={styles.categoryIcon}>
             <Fontisto name="hotel" size={35} color="#FF6347" />
           </View>
           <Text style={styles.categoryBtnTxt}>Hotels</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.categoryBtn} onPress={() => navigation.navigate('CardListScreen', {title: 'Fastfood Center'})}>
           <View style={styles.categoryIcon}>
             <Ionicons name="md-restaurant" size={35} color="#FF6347" />
           </View>
           <Text style={styles.categoryBtnTxt}>Dineouts</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.categoryBtn} onPress={() => navigation.navigate('CardListScreen', {title: 'Fastfood Center'})}>
           <View style={styles.categoryIcon}>
             <MaterialIcons name="expand-more" size={35} color="#FF6347" />
           </View>
@@ -119,48 +119,48 @@ const HomeScreen = ({navigation}) => {
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
             <Image
-              source={require('../assets/banners/food-banner2.jpg')}
+              source={require('../assets/banners/food-banner11.jpg')}
               resizeMode="cover"
               style={styles.cardImg}
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Amazing Food Place</Text>
+            <Text style={styles.cardTitle}>Jevinik Restaurant</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Amazing description for this amazing place
+            A spur of the moment decision to have a lunch date with my friends , to a place that is pocket friendly.
             </Text>
           </View>
         </View>
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
             <Image
-              source={require('../assets/banners/food-banner3.jpg')}
+              source={require('../assets/banners/food-banner.jpg')}
               resizeMode="cover"
               style={styles.cardImg}
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Amazing Food Place</Text>
+            <Text style={styles.cardTitle}>Jade chinese ikeja lagos nigeria</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Amazing description for this amazing place
+            The spring roll never disappoints. it has maintained its standard. will always stop by for it. it was also a walking distance to our hotel. made it convenient
             </Text>
           </View>
         </View>
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
             <Image
-              source={require('../assets/banners/food-banner4.jpg')}
+              source={require('../assets/banners/food-banner33.jpg')}
               resizeMode="cover"
               style={styles.cardImg}
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Amazing Food Place</Text>
+            <Text style={styles.cardTitle}>Krispy Kreme Nigeria</Text>
             <StarRating ratings={4} reviews={99} />
             <Text style={styles.cardDetails}>
-              Amazing description for this amazing place
+            Same quality like in the US - Krispy Kreme Nigeria.
             </Text>
           </View>
         </View>

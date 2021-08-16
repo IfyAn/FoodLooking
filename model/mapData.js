@@ -1,66 +1,67 @@
 const Images = [
-    { image: require("../assets/banners/food-banner1.jpg") },
-    { image: require("../assets/banners/food-banner2.jpg") },
-    { image: require("../assets/banners/food-banner3.jpg") },
-    { image: require("../assets/banners/food-banner4.jpg") },
+    { image: require("../assets/banners/food-banner11.jpg") },
+    { image: require("../assets/banners/food-banner22.jpg") },
+    { image: require("../assets/banners/food-banner33.jpg") },
+    { image: require("../assets/banners/food-banner44.jpg") },
+    { image: require("../assets/banners/download.jpg") },
 ];
 
 export const markers = [
-    {
-      coordinate: {
-        latitude: 22.6293867,
-        longitude: 88.4354486,
-      },
-      title: "Amazing Food Place",
-      description: "This is the best food place",
-      image: Images[0].image,
-      rating: 4,
-      reviews: 99,
+  {
+    coordinate: {
+      latitude: 6.580380,
+      longitude: 3.358830,
     },
-    {
-      coordinate: {
-        latitude: 22.6345648,
-        longitude: 88.4377279,
-      },
-      title: "Second Amazing Food Place",
-      description: "This is the second best food place",
-      image: Images[1].image,
-      rating: 5,
-      reviews: 102,
+    title: 'Jevinik Restaurant',
+    image: Images[0].image,
+    rating: 4,
+    reviews: 99,
+    categories: ['Restaurant', 'Hotel', 'Dineout'],
+  },
+  {
+    coordinate: {
+      latitude: 6.602567,
+      longitude: 3.354326,
     },
-    {
-      coordinate: {
-        latitude: 22.6281662,
-        longitude: 88.4410113,
-      },
-      title: "Third Amazing Food Place",
-      description: "This is the third best food place",
-      image: Images[2].image,
-      rating: 3,
-      reviews: 220,
+    title: 'Commint Buka Ikeja',
+    image: Images[1].image,
+    rating: 5,
+    reviews: 102,
+    categories: ['Restaurant', 'Hotel', 'Dineout'],
+  },
+  {
+    coordinate: {
+      latitude: 6.601600,
+      longitude: 3.343940,
     },
-    {
-      coordinate: {
-        latitude: 22.6341137,
-        longitude: 88.4497463,
-      },
-      title: "Fourth Amazing Food Place",
-      description: "This is the fourth best food place",
-      image: Images[3].image,
-      rating: 4,
-      reviews: 48,
+    title: 'Krispy Kreme Nigeria',      
+    image: Images[2].image,
+    rating: 3,
+    reviews: 220,
+    categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner'],
+  },
+  {
+    coordinate: {
+      latitude: 6.646838,
+      longitude: 3.309486,
     },
-    {
-      coordinate: {
-        latitude: 22.6292757,
-        longitude: 88.444781,
-      },
-      title: "Fifth Amazing Food Place",
-      description: "This is the fifth best food place",
-      image: Images[3].image,
-      rating: 4,
-      reviews: 178,
+    title: 'Calabar Kitchen',
+    image: Images[3].image,
+    rating: 4,
+    reviews: 48,
+    categories: ['Restaurant', 'Hotel', 'Dineout'],
+  },
+  {
+    coordinate: {
+      latitude:  6.596010,
+      longitude: 3.350920,
     },
+    title: 'Dominos Pizza Nigeria',
+    image: Images[4].image,
+    rating: 4,
+    reviews: 178,
+    categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner',],
+  },
 ];
 
 export const mapDarkStyle = [

@@ -210,16 +210,18 @@ const MapTestScreen = () => {
           style={styles.map}
           customMapStyle={ theme.dark ? mapDarkStyle : mapStandardStyle}
           region={{
-            latitude: 37.78825,
-            longitude: -122.4324,
+            // latitude: 37.78825,
+            // longitude: -122.4324,
+            latitude: 6.601838,
+            longitude: 3.351486,
             latitudeDelta: 0.015,
             longitudeDelta: 0.0121,
           }}
         >
           <Marker 
             coordinate={{
-              latitude: 37.78825,
-              longitude: -122.4324,
+              latitude: 6.601838,
+              longitude: 3.351486,
             }}
             image={require('../assets/map_marker.png')}
             title="Test Title"

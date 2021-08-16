@@ -1,22 +1,24 @@
 const Images = [
-    {image: require('../assets/banners/food-banner1.jpg')},
-    {image: require('../assets/banners/food-banner2.jpg')},
-    {image: require('../assets/banners/food-banner3.jpg')},
-    {image: require('../assets/banners/food-banner4.jpg')},
+    {image: require('../assets/banners/food-banner11.jpg')},
+    {image: require('../assets/banners/food-banner22.jpg')},
+    {image: require('../assets/banners/food-banner33.jpg')},
+    {image: require('../assets/banners/food-banner44.jpg')},
     {image: require('../assets/banners/food-banner5.jpg')},
+    {image: require('../assets/banners/food-banner.jpg')},
+    {image: require('../assets/banners/food-banner1.jpg')},
   ];
   
   export const data = [
     {
       id: '1',
       coordinate: {
-        latitude: 22.6293867,
-        longitude: 88.4354486,
+        latitude: 6.580380,
+        longitude: 3.358830,
       },
-      title: 'Amazing Food Place',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
-        
-        Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+      title: 'Jevinik Restaurant',
+      description: `A spur of the moment decision to have a lunch date with my friends , to a place that is pocket friendly and serves local food and Jevnik came to mind. We weren't disappointed as the cool environment added to the gun. I will strongly recommend that Jevnik 
+        introduce finger foods before the main dish and dessert after eating. `,
+      location: `21 Isaac John Street, Ikeja,Lagos 23401 Nigeria`,
       image: Images[0].image,
       rating: 4,
       reviews: 99,
@@ -25,74 +27,69 @@ const Images = [
     {
       id: '2',
       coordinate: {
-        latitude: 22.6345648,
-        longitude: 88.4377279,
+        latitude: 6.602567,
+        longitude: 3.354326,
       },
-      title: 'Second Amazing Food Place',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
-        
-        Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+      title: 'Commint Buka Ikeja',
+      description: `Good Food! Nice Ambience - Commint Buka Ikeja`,
+      location:`15/17 Majekodunmi street, Omotayo Street, Ikeja, Lagos. Nigeria`,
       image: Images[1].image,
       rating: 5,
       reviews: 102,
-      categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner'],
+      categories: ['Restaurant', 'Hotel', 'Dineout'],
     },
     {
       id: '3',
       coordinate: {
-        latitude: 22.6281662,
-        longitude: 88.4410113,
+        latitude: 6.601600,
+        longitude: 3.343940,
       },
-      title: 'Third Amazing Food Place',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
-        
-        Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+      title: 'Krispy Kreme Nigeria',
+      description: `Same quality like in the US - Krispy Kreme Nigeria.`,
+      location:`Obafemi Awolowo Way Ikeja City Mall, Ikeja 100281 Nigeria`,      
       image: Images[2].image,
       rating: 3,
       reviews: 220,
-      categories: ['Restaurant', 'Hotel', 'Dineout'],
+      categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner'],
     },
     {
       id: '4',
       coordinate: {
-        latitude: 22.6341137,
-        longitude: 88.4497463,
+        latitude: 6.646838,
+        longitude: 3.309486,
       },
-      title: 'Fourth Amazing Food Place',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
-        
-        Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+      title: 'Calabar Kitchen',
+      description: `Splendid place to be with families,friends and business meetings,very cozy and quiet,romantic environment,really wish to be visiting CALABAR KITCHEN on daily basis for most fulfilment of my stomach needs.Request everyone to pay a visit and get your optimum satisfaction.`,
+      location:`27 Oluwaleyimu Str. Beside Washer Man Dry Cleaners, Lagos 550104 Nigeria`,  
       image: Images[3].image,
       rating: 4,
       reviews: 48,
-      categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner'],
+      categories: ['Restaurant', 'Hotel', 'Dineout'],
     },
     {
       id: '5',
       coordinate: {
-        latitude: 22.6292757,
-        longitude: 88.444781,
+        latitude:  6.596010,
+        longitude: 3.350920,
       },
-      title: 'Fifth Amazing Food Place',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
-        
-        Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
+      title: 'Dominos Pizza Nigeria',
+      description: `Good Pizza and chilled drinks. Friendly atmosphere. Good for family outing. You can also do take outs.`,
+      location:`31/37, Toyin Street, Ikeja, Lagos, Lagos 550104 Nigeria`,
       image: Images[4].image,
       rating: 4,
       reviews: 178,
-      categories: ['Restaurant', 'Hotel', 'Dineout'],
+      categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner',],
     },
     {
       id: '6',
       coordinate: {
-        latitude: 22.6293867,
-        longitude: 88.4354486,
+        latitude: 6.580380,
+        longitude: 3.358830,
       },
-      title: 'Amazing Food Place',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
-        
-        Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
-      image: Images[0].image,
+      title: 'Jade chinese ikeja lagos nigeria',
+      location:`Isaac John St, Lagos 550104 Nigeria`,
+      description:`The spring roll never disappoints. it has maintained its standard. will always stop by for it. it was also a walking distance to our hotel. made it convenient`,
+      image: Images[5].image,
       rating: 4,
       reviews: 99,
       categories: ['Restaurant', 'Hotel', 'Dineout'],
@@ -100,14 +97,13 @@ const Images = [
     {
       id: '7',
       coordinate: {
-        latitude: 22.6345648,
-        longitude: 88.4377279,
+        latitude: 6.574060,
+        longitude: 3.362490,
       },
-      title: 'Second Amazing Food Place',
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est metus, gravida vel ex volutpat, posuere euismod tortor. Pellentesque tincidunt, mi ac varius blandit, quam orci dignissim risus, vitae rutrum orci urna ut neque.
-        
-        Pellentesque condimentum ut libero id blandit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
-      image: Images[1].image,
+      title: 'La Mango Restaurant and Bar',
+      description: `Good Nigerian food, small chops, cocktails, and liquor. The servers could be better though. Overall, a nice experience. The owner and manager are cool`,
+      location:`3a Adekunle Fajuyi Way Off Mobolaji Bank Anthony Way, Lagos 550104 Nigeria`,
+      image: Images[6].image,
       rating: 5,
       reviews: 102,
       categories: ['Restaurant', 'Fastfood Center', 'Snacks Corner'],

@@ -18,6 +18,7 @@ import {View} from 'react-native-animatable';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import CardListScreen from './CardListScreen';
 import CardItemDetails from './CardItemDetails';
+import CardFormScreen from './CardFormScreen';
 
 const HomeStack = createStackNavigator();
 const NotificationStack = createStackNavigator();
@@ -95,7 +96,7 @@ const HomeStackScreen = ({navigation}) => {
         name="Home"
         component={HomeScreen}
         options={{
-          title: 'FoodFinder',
+          title: 'FoodLooking',
           headerLeft: () => (
             <View style={{marginLeft: 10}}>
               <Icon.Button
@@ -232,6 +233,13 @@ const ProfileStackScreen = ({navigation}) => {
           title: 'Edit Profile',
         }}
         component={EditProfileScreen}
+      />
+      <ProfileStack.Screen
+        name="Payment"
+        options={{
+          title: 'Make your Payment',
+        }}
+        component={CardFormScreen}
       />
     </ProfileStack.Navigator>
   );

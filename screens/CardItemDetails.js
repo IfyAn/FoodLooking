@@ -57,6 +57,7 @@ const CardItemDetails = ({route}) => {
         </TriggeringView>
         <View style={[styles.section, styles.sectionLarge]}>
           <Text style={styles.sectionContent}>{itemData.description}</Text>
+          <Text style={styles.sectionContent}>{itemData.location}</Text>
         </View>
 
         <View style={styles.section}>
